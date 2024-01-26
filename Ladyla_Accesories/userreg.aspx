@@ -3,6 +3,14 @@
     <table class="w-100" style="width: 90%">
     <tr>
         <td>
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+        </td>
+        <td>
+            &nbsp;</td>
+    </tr>
+    <tr>
+        <td>
             <asp:Label ID="Label1" runat="server" Text="Name" ForeColor="Black"></asp:Label>
         </td>
         <td>
@@ -17,7 +25,7 @@
         <td>
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="TextBox2" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="*Age must be above 16" ForeColor="Red" MinimumValue="16"></asp:RangeValidator>
+            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="*Age must be above 16" ForeColor="Red" MaximumValue="100" MinimumValue="16" Type="Integer"></asp:RangeValidator>
         </td>
     </tr>
     <tr>
@@ -54,22 +62,31 @@
     </tr>
     <tr>
         <td>
+            <asp:Label ID="Label7" runat="server" Text="State"></asp:Label>
+            <br />
             <asp:Label ID="Label6" runat="server" Text="District"></asp:Label>
         </td>
         <td>
-            <asp:DropDownList ID="DropDownList1" runat="server">
-            </asp:DropDownList>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <asp:Label ID="Label7" runat="server" Text="State"></asp:Label>
-        </td>
-        <td>
-            <asp:DropDownList ID="DropDownList2" runat="server">
-            </asp:DropDownList>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <table class="w-100">
+                        <tr>
+                            <td>
+                                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:DropDownList ID="DropDownList3" runat="server">
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+                    </table>
+                </ContentTemplate>
+            </asp:UpdatePanel>
         </td>
     </tr>
     <tr>
@@ -79,7 +96,7 @@
         <td>
             <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox6" ErrorMessage="*Invalid number" ForeColor="Red" ValidationExpression="/d{10}"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox6" ErrorMessage="*Invalid number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
         </td>
     </tr>
     <tr>
@@ -119,7 +136,7 @@
     <tr>
         <td>&nbsp;</td>
         <td>
-            <asp:Button ID="Button1" runat="server" Text="Register" />
+            <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
         </td>
     </tr>
     <tr>

@@ -57,3 +57,7 @@ C:\Users\fathi\source\repos\Ladyla_Accesories\Ladyla_Accesories\obj\Debug\Ladyla
 C:\Users\fathi\source\repos\Ladyla_Accesories\Ladyla_Accesories\obj\Debug\Ladyla_Accesories.csproj.CopyComplete
 C:\Users\fathi\source\repos\Ladyla_Accesories\Ladyla_Accesories\obj\Debug\Ladyla_Accesories.dll
 C:\Users\fathi\source\repos\Ladyla_Accesories\Ladyla_Accesories\obj\Debug\Ladyla_Accesories.pdb
+C:\Users\fathi\source\repos\Ladyla_Accesories\Ladyla_Accesories\bin\BLL.dll
+C:\Users\fathi\source\repos\Ladyla_Accesories\Ladyla_Accesories\bin\DAL.dll
+C:\Users\fathi\source\repos\Ladyla_Accesories\Ladyla_Accesories\bin\BLL.pdb
+C:\Users\fathi\source\repos\Ladyla_Accesories\Ladyla_Accesories\bin\DAL.pdb

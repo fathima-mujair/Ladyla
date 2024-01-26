@@ -26,7 +26,7 @@
             <td>
                 <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox6" ErrorMessage="*Invalid number" ForeColor="Red" ValidationExpression="/d{10}"></asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox6" ErrorMessage="*Invalid number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
@@ -65,7 +65,7 @@
         <tr>
             <td>&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" runat="server" Text="Register" />
+                <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
             </td>
         </tr>
         <tr>
