@@ -133,14 +133,24 @@
     <Content Include="assets\js\scrollreveal.min.js" />
     <Content Include="assets\js\slick.js" />
     <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="Category.aspx" />
+    <Content Include="categoryedit.aspx" />
+    <Content Include="categoryview.aspx" />
     <Content Include="contact.html" />
     <Content Include="Homepage.aspx" />
+    <Content Include="images\Category\Bangles %281%29.jpeg" />
+    <Content Include="images\Category\Bracelets.jpeg" />
+    <Content Include="images\Category\Chains.jpeg" />
+    <Content Include="images\Category\Earrings.jpeg" />
+    <Content Include="images\Category\Rings.jpeg" />
     <Content Include="images\Logo.jpg" />
     <Content Include="index.html" />
     <Content Include="Login.aspx" />
     <Content Include="Loginpage.aspx" />
+    <Content Include="main.html" />
     <Content Include="products.html" />
     <Content Include="single-product.html" />
+    <Content Include="style.css" />
     <Content Include="userreg.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -158,6 +168,27 @@
     </Compile>
     <Compile Include="adminreg.aspx.designer.cs">
       <DependentUpon>adminreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="categoryedit.aspx.cs">
+      <DependentUpon>categoryedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="categoryedit.aspx.designer.cs">
+      <DependentUpon>categoryedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="categoryview.aspx.cs">
+      <DependentUpon>categoryview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="categoryview.aspx.designer.cs">
+      <DependentUpon>categoryview.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
@@ -232,6 +263,7 @@
       <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

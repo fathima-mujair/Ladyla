@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminclass.cs" />
     <Compile Include="Adminregclass.cs" />
+    <Compile Include="Categoryinsertclass.cs" />
     <Compile Include="Loginclass.cs" />
     <Compile Include="Userregclass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
