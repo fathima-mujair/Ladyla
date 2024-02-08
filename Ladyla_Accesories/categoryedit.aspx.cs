@@ -36,6 +36,23 @@ namespace Ladyla_Accesories
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+            int id = Convert.ToInt32(Session["category_id"]);
+            int i = objbll.edit(id, TextBox1.Text, Image1.ImageUrl, TextBox2.Text);
+            if (i != 0)
+                Label4.Text = "Category Updated";
+            Response.Redirect("categoryview.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+            int id = Convert.ToInt32(Session["category_id"]);
+            int i = objbll.delete(id);
+            if (i != 0)
+                Label4.Text = "Category Deleted";
+
+            Response.Redirect("categoryview.aspx");
+
         }
     }
 }

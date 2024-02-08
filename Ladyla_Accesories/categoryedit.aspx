@@ -58,11 +58,14 @@
                 <td>&nbsp;</td>
                 <td>
                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Edit" />
+                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Delete" />
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Label4" runat="server"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>

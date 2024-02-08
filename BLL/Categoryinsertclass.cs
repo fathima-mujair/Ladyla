@@ -32,5 +32,20 @@ namespace BLL
             SqlDataReader dr = objdal.Fn_Reader(s);
             return dr;
         }
+
+        public int edit(int cate_id, string cate_name,string cate_img,string cate_desc)
+        {
+            string s = "update categorytab set category_name='" + cate_name + "',image='" + cate_img + "',description='" + cate_desc + "'where category_id=" + cate_id + "";
+            int i = objdal.Fn_Nonquery(s);
+            return i;
+        }
+
+        public int delete(int cate_id)
+        {
+            string s = "delete from categorytab where category_id=" + cate_id + "";
+            int i = objdal.Fn_Nonquery(s);
+            return i;
+        }
     }
+
 }
