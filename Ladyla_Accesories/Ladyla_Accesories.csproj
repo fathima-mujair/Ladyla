@@ -138,19 +138,48 @@
     <Content Include="categoryview.aspx" />
     <Content Include="contact.html" />
     <Content Include="Homepage.aspx" />
-    <Content Include="images\Category\Bangles %281%29.jpeg" />
-    <Content Include="images\Category\Bracelets.jpeg" />
-    <Content Include="images\Category\Chains.jpeg" />
-    <Content Include="images\Category\Earrings.jpeg" />
-    <Content Include="images\Category\Rings.jpeg" />
+    <Content Include="images\bangle1.jpeg" />
+    <Content Include="images\bangle2.jpeg" />
+    <Content Include="images\bangle3.jpeg" />
+    <Content Include="images\bangle4.jpeg" />
+    <Content Include="images\Bangles %281%29.jpeg" />
+    <Content Include="images\bracelet1.jpeg" />
+    <Content Include="images\bracelet2.jpeg" />
+    <Content Include="images\bracelet3.jpeg" />
+    <Content Include="images\bracelet4.jpeg" />
+    <Content Include="images\Bracelets.jpeg" />
+    <Content Include="images\chain1.jpeg" />
+    <Content Include="images\chain2.jpeg" />
+    <Content Include="images\chain3.jpeg" />
+    <Content Include="images\chain4.jpeg" />
+    <Content Include="images\Chains.jpeg" />
+    <Content Include="images\earring1.jpeg" />
+    <Content Include="images\earring2.jpeg" />
+    <Content Include="images\earring3.jpeg" />
+    <Content Include="images\earring4.jpeg" />
+    <Content Include="images\Earrings.jpeg" />
+    <Content Include="images\index.js" />
     <Content Include="images\Logo.jpg" />
+    <Content Include="images\ring1.jpeg" />
+    <Content Include="images\ring2.jpeg" />
+    <Content Include="images\ring3.jpeg" />
+    <Content Include="images\ring4.jpeg" />
+    <Content Include="images\Rings.jpeg" />
+    <Content Include="image\Category\Bangles %281%29.jpeg" />
+    <Content Include="image\Category\Bracelets.jpeg" />
+    <Content Include="image\Category\Chains.jpeg" />
+    <Content Include="image\Category\Earrings.jpeg" />
+    <Content Include="image\Category\Rings.jpeg" />
+    <Content Include="image\Logo.jpg" />
     <Content Include="index.html" />
     <Content Include="Login.aspx" />
     <Content Include="Loginpage.aspx" />
     <Content Include="main.html" />
     <Content Include="products.html" />
+    <Content Include="productsinsert.aspx" />
     <Content Include="single-product.html" />
-    <Content Include="style.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="Userpage.aspx" />
     <Content Include="userreg.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -211,6 +240,13 @@
     <Compile Include="Loginpage.aspx.designer.cs">
       <DependentUpon>Loginpage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="productsinsert.aspx.cs">
+      <DependentUpon>productsinsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productsinsert.aspx.designer.cs">
+      <DependentUpon>productsinsert.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrations.Master.cs">
       <DependentUpon>Registrations.Master</DependentUpon>
@@ -225,6 +261,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Userpage.aspx.cs">
+      <DependentUpon>Userpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userpage.aspx.designer.cs">
+      <DependentUpon>Userpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="userreg.aspx.cs">
       <DependentUpon>userreg.aspx</DependentUpon>
@@ -263,7 +306,10 @@
       <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="image\Category\NewFolder1\" />
+    <Folder Include="image\Product\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

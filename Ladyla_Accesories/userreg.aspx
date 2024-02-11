@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Registrations.Master" AutoEventWireup="true" CodeBehind="userreg.aspx.cs" Inherits="Ladyla_Accesories.userreg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    
     <table class="w-100" style="width: 90%">
     <tr>
         <td style="width: 264px">
