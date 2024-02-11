@@ -178,7 +178,7 @@
     <Content Include="products.html" />
     <Content Include="productsinsert.aspx" />
     <Content Include="single-product.html" />
-    <Content Include="assets\css\style.css" />
+    <Content Include="userpage.css" />
     <Content Include="Userpage.aspx" />
     <Content Include="userreg.aspx" />
     <Content Include="Web.config" />

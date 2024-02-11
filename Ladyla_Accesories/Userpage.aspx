@@ -19,7 +19,7 @@
         rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="userpage.css">
 
 
     <!-- font awesome icon -->
