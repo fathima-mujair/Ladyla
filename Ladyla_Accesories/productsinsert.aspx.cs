@@ -38,5 +38,7 @@ namespace Ladyla_Accesories
                 Label7.Text = "Product Added";
 
         }
+
+
     }
 }

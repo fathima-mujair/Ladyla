@@ -175,8 +175,10 @@
     <Content Include="Login.aspx" />
     <Content Include="Loginpage.aspx" />
     <Content Include="main.html" />
+    <Content Include="productedit.aspx" />
     <Content Include="products.html" />
     <Content Include="productsinsert.aspx" />
+    <Content Include="Productview.aspx" />
     <Content Include="single-product.html" />
     <Content Include="userpage.css" />
     <Content Include="Userpage.aspx" />
@@ -240,12 +242,26 @@
     <Compile Include="Loginpage.aspx.designer.cs">
       <DependentUpon>Loginpage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="productedit.aspx.cs">
+      <DependentUpon>productedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productedit.aspx.designer.cs">
+      <DependentUpon>productedit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="productsinsert.aspx.cs">
       <DependentUpon>productsinsert.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="productsinsert.aspx.designer.cs">
       <DependentUpon>productsinsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productview.aspx.cs">
+      <DependentUpon>Productview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productview.aspx.designer.cs">
+      <DependentUpon>Productview.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrations.Master.cs">

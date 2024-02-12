@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="categoryview.aspx.cs" Inherits="Ladyla_Accesories.categoryview" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Productview.aspx.cs" Inherits="Ladyla_Accesories.Productview" %>
 
 <!DOCTYPE html>
 
@@ -15,28 +15,35 @@
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
                 <td>
                     <asp:DataList ID="DataList1" runat="server" RepeatDirection="Horizontal">
                         <ItemTemplate>
                             <table class="auto-style1">
                                 <tr>
                                     <td>
-                                        <asp:ImageButton ID="ImageButton1" runat="server" CommandArgument='<%# Eval("category_id") %>' Height="202px" ImageUrl='<%# Eval("image") %>' OnCommand="ImageButton1_Command" Width="184px" />
-                                        1</td>
+                                        <asp:ImageButton ID="ImageButton1" runat="server" CommandArgument='<%# Eval("product_id") %>' Height="200px" ImageUrl='<%# Eval("image") %>' OnCommand="ImageButton1_Command" Width="197px" />
+                                    </td>
+                                    <td>&nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("category_name") %>'></asp:Label>
+                                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("price") %>'></asp:Label>
                                     </td>
+                                    <td>&nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("description") %>'></asp:Label>
+                                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("product_name") %>'></asp:Label>
                                     </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
                                 </tr>
                             </table>
                         </ItemTemplate>
@@ -49,9 +56,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>
-                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
-                </td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>

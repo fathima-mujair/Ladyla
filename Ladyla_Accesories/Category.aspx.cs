@@ -20,7 +20,7 @@ namespace Ladyla_Accesories
         protected void Button1_Click(object sender, EventArgs e)
         {
             string p = "";
-            p = "~/images/Category" + FileUpload1.FileName;
+            p = "~/image/Category" + FileUpload1.FileName;
             FileUpload1.SaveAs(MapPath(p));
 
             int i = objbll.insert(TextBox1.Text, p, TextBox2.Text);
