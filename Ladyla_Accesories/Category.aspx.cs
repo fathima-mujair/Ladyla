@@ -28,6 +28,5 @@ namespace Ladyla_Accesories
                 Label4.Text = "Category Added";
         }
 
-       
     }
 }

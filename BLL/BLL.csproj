@@ -43,9 +43,11 @@
   <ItemGroup>
     <Compile Include="adminclass.cs" />
     <Compile Include="Adminregclass.cs" />
+    <Compile Include="cartclass.cs" />
     <Compile Include="Categoryinsertclass.cs" />
     <Compile Include="Loginclass.cs" />
     <Compile Include="productclass.cs" />
+    <Compile Include="userclass.cs" />
     <Compile Include="Userregclass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

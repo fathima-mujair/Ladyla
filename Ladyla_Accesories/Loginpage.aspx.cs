@@ -24,6 +24,7 @@ namespace Ladyla_Accesories
             string logtyp = objbll.Fn_logtyp(TextBox10.Text, TextBox11.Text);
             if(cid=="1")
             {
+
                 if(logtyp=="admin")
                 Label14.Text = "valid admin";
                 if(logtyp=="user")

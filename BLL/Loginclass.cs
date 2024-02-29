@@ -18,11 +18,20 @@ namespace BLL
             string cid = objdal.Fn_Scalar(s);
             return cid;
         }
+
+        
         public string Fn_logtyp(string un,string pw)
         {
             string s = "select login_type from Logintab where username='" + un + "' and password='" + pw + "'";
             string logtyp = objdal.Fn_Scalar(s);
             return logtyp;
+        }
+
+        public string uid(string un,string pw)
+        {
+            string s = "select reg_id from Logintab where username='" + un + "' and password='" + pw + "'";
+            string uid = objdal.Fn_Scalar(s);
+            return uid;
         }
     }
 }

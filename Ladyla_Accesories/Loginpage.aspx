@@ -7,8 +7,7 @@
             </td>
            
         </tr>
-        <tr>
-            <td style="height: 56px; width: 280px;">
+        <tr>            <td style="height: 56px; width: 280px;">
                 <asp:Label ID="Label12" runat="server" Text="Username" Height="10px"></asp:Label>
             </td>
             <td style="width: 262px; height: 56px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

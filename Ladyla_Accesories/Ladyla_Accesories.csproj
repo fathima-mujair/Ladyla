@@ -133,11 +133,14 @@
     <Content Include="assets\js\scrollreveal.min.js" />
     <Content Include="assets\js\slick.js" />
     <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="cart.aspx" />
+    <Content Include="cart.css" />
     <Content Include="Category.aspx" />
     <Content Include="categoryedit.aspx" />
     <Content Include="categoryview.aspx" />
     <Content Include="contact.html" />
     <Content Include="Homepage.aspx" />
+    <Content Include="imagedisplay.aspx" />
     <Content Include="images\bangle1.jpeg" />
     <Content Include="images\bangle2.jpeg" />
     <Content Include="images\bangle3.jpeg" />
@@ -180,8 +183,10 @@
     <Content Include="productsinsert.aspx" />
     <Content Include="Productview.aspx" />
     <Content Include="single-product.html" />
+    <Content Include="singleproduct.aspx" />
     <Content Include="userpage.css" />
     <Content Include="Userpage.aspx" />
+    <Content Include="userpage.js" />
     <Content Include="userreg.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -199,6 +204,13 @@
     </Compile>
     <Compile Include="adminreg.aspx.designer.cs">
       <DependentUpon>adminreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Category.aspx.cs">
       <DependentUpon>Category.aspx</DependentUpon>
@@ -227,6 +239,13 @@
     </Compile>
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="imagedisplay.aspx.cs">
+      <DependentUpon>imagedisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="imagedisplay.aspx.designer.cs">
+      <DependentUpon>imagedisplay.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -270,6 +289,13 @@
     </Compile>
     <Compile Include="Registrations.Master.designer.cs">
       <DependentUpon>Registrations.Master</DependentUpon>
+    </Compile>
+    <Compile Include="singleproduct.aspx.cs">
+      <DependentUpon>singleproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="singleproduct.aspx.designer.cs">
+      <DependentUpon>singleproduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

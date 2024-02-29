@@ -38,7 +38,9 @@
                                     <td>&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td>&nbsp;</td>
+                                    <td>
+                                        <asp:Button ID="Button1" runat="server" CommandArgument='<%# Eval("product_id") %>' OnCommand="Button1_Command" Text="Add to cart" />
+                                    </td>
                                     <td>&nbsp;</td>
                                 </tr>
                                 <tr>

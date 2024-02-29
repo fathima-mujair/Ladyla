@@ -21,21 +21,21 @@
     <!-- css -->
     <link rel="stylesheet" href="userpage.css">
 
+    <%-- javascript --%>
+
+    <script src="userpage.js"></script>
+
 
     <!-- font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     
 
-   <%--  <%-- <form id="form1" runat="server">--%>
-       <%-- <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>--%>
-    <%--</form>--%>
+   
     <!-- Nav bar -->
     <nav class="navbar">
         <div class="logo">
@@ -49,8 +49,8 @@
         <div class="subheading">
             <ul class="navbarlist">
                 <li><a href="">Home</a></li>
-                <li><a href="">Collections</a>
-                    <ul class="submenu">
+                <li><a class="collection" href=""<%-- onmouseover="showSubmenu()" ondbclick="hideSubmenu()" --%>>Collections</a>
+                    <ul class="submenu" <%--style="visibility:hidden; z-index:2;" onmouseleave="hideSubmenu()"--%>>
                         <li><a href=>Rings</a></li>
                         <li><a href=>Chains</a></li>
                         <li><a href=>Earrings</a></li>
@@ -59,59 +59,79 @@
                     </ul>
                 </li>
                 <li><a href="Login.aspx">Login</a></li>
-                <li><a href="">cart<i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="cart.aspx">cart<i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
     </nav>
 
     <!-- main body -->
 
-    <div class="main-box">
-        <div class="box1">
-            <img src="images/Bracelets.jpeg">
-            <span class="innerbigbox">
+
+    <form id="form1" runat="server">
+       <%--<div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>--%>
+       <div >
+            <div class="main-box">
+                <div class="box1">
+                    
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/Bangles (1).jpeg" Height="100%" Width="100%"/>
+                        <span class="innerbigbox">
                 <h1>Bracelets</h1>
                 <p>Elegant,Stainless steel,Anti Tarnish</p>
-                <button>Discover More</button>
+                <asp:button ID="Button1" runat="server" Text="Discover More" CssClass=" innerbigboxbutton" OnClick="Button1_Click"/>
             </span>
-        </div>
-        <div class="box2">
-            <div class="box2-1">
-                <div><img src="images/Bangles (1).jpeg">
-                    <span class="innerbox">
+                        
+                </div>
+                <div class="box2">
+                    <div class="box2-1">
+                         <div>
+                              <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/Rings.jpeg" Height="100%" Width="100%" />
+                             <span class="innerbox">
                         <h1>Bangles</h1>
                         <p>Elegant,Stainless steel,Anti Tarnish</p>
-                        <button>Discover More</button>
+                        <asp:button ID="Button2" runat="server" Text="Discover More" CssClass=" innbutton" OnClick="Button2_Click"/>
                     </span>
-                </div>
-                <div><img src="images/Chains.jpeg">
-                    <span class="innerbox">
-                        <h1>Chains</h1>
+                        </div>
+                         <div>
+                             <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/images/Earrings.jpeg" Height="100%" Width="100%" />
+                             <span class="innerbox">
+                        <h1>Bangles</h1>
                         <p>Elegant,Stainless steel,Anti Tarnish</p>
-                        <button>Discover More</button>
+                         <asp:button ID="Button3" runat="server" Text="Discover More" CssClass=" innbutton" OnClick="Button3_Click"/>
                     </span>
-                </div>
-            </div>
-            <div class="box2-2">
-                <div>
-                    <img src="images/Rings.jpeg">
-                    <span class="innerbox">
-                        <h1>Rings</h1>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="box2-2">
+                        <div>
+                            <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/images/Chains.jpeg" Height="100%" Width="100%" />
+                             <span class="innerbox">
+                        <h1>Bangles</h1>
                         <p>Elegant,Stainless steel,Anti Tarnish</p>
-                        <button>Discover More</button>
+                         <asp:button ID="Button4" runat="server" Text="Discover More" CssClass=" innbutton" OnClick="Button4_Click"/>
                     </span>
-                </div>
-                <div><img src="images/Earrings.jpeg">
-                    <span class="innerbox">
-                        <h1>Earrings</h1>
+                        </div>
+                         <div>
+                             <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/images/Bracelets.jpeg" Height="100%" Width="100%"/>
+                             <span class="innerbox">
+                        <h1>Bangles</h1>
                         <p>Elegant,Stainless steel,Anti Tarnish</p>
-                        <button>Discover More</button>
+                         <asp:button ID="Button5" runat="server" Text="Discover More" CssClass=" innbutton" OnClick="Button5_Click1"/>
                     </span>
+                        </div>
+                         
+                         
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        
 
+    </form>
+  
     <!-- Latest Collection -->
     <div class="latest">
         <div class="latest-collection">
@@ -294,6 +314,8 @@
 
         </div>
     </div>
+
+      <script src="userpage.js"></script>
    
 </body>
  

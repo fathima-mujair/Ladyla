@@ -77,16 +77,20 @@ body {
 .submenu {
     position: absolute;
     width: 150px;
-    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-    list-style-type: none;
+   background-color:darkgrey;
+   color:white;
+       list-style-type: none;
     top: 30px;
+    transition:2s;
     visibility: hidden;
 }
 
+.collection:hover .submenu{
+    visibility:visible;
+}
     .submenu li {
         opacity: 1;
-        display: block;
-         
+        display: block;   
         color: #2a2a2a;
         padding-left: 10px;
         height: 40px;
@@ -94,13 +98,18 @@ body {
         border-bottom: 1px solid #eee;
     }
 
+    .main{
+        height:100%;
+        width:100%;
+        background-color:grey;
+
+    }
 .main-box {
     padding: 20px;
     height: 550px;
     width: 96%;
     display: flex;
     margin-top: 30px;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -117,10 +126,15 @@ body {
         width: 100%;
     }
 
-    .box1:hover .innerbigbox {
-        visibility: visible;
-        opacity: 0.8;
-    }
+.box1img {
+    height: 100px;
+    width: 100px;
+}
+
+.box1:hover .innerbigbox {
+    visibility: visible;
+    opacity: 0.8;
+}
 
 .innerbigbox {
     background-color: black;
@@ -150,7 +164,7 @@ body {
         font-size: medium;
     }
 
-    .innerbigbox button {
+    .innerbigboxbutton {
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 20px;
@@ -162,11 +176,27 @@ body {
         margin-left: 130px;
         margin-top: 40px;
     }
+.innerbigbox button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    border: solid 1px white;
+    background: none;
+    color: white;
+    margin-left: 130px;
+    margin-top: 40px;
+}
 
-        .innerbigbox button:hover {
+        .innerbigboxbutton:hover {
             background-color: white;
             color: black;
         }
+.innerbigbox button:hover {
+    background-color: white;
+    color: black;
+}
 
 
 
@@ -263,10 +293,28 @@ body {
         margin-top: 30px;
     }
 
-        .innerbox button:hover {
+.innbutton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    border: solid 1px white;
+    background: none;
+    color: white;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+        .innbutton:hover {
             background-color: white;
             color: black;
         }
+
+    .innerbox button:hover {
+        background-color: white;
+        color: black;
+    }
 
  /*--------Latest Collection------- */
 
@@ -480,3 +528,4 @@ body {
  .footer-menu a:hover {
             color: #f26522;
         }
+

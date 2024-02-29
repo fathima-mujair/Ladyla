@@ -30,13 +30,7 @@ namespace Ladyla_Accesories
             Response.Redirect("categoryedit.aspx");
 
         }
-       
-       
-
-
 
        
-
-
     }
 }

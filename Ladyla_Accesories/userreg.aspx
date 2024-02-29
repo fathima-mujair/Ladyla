@@ -138,7 +138,7 @@
     <tr>
         <td style="width: 264px">&nbsp;</td>
         <td style="width: 681px">
-           <asp:Button ID="Button1" CssClass="reg-button" runat="server" Text="Register" OnClick="Button1_Click" />
+           <asp:Button ID="Button1" CssClass="reg-button" style="border:none;background-color:black;color:white;padding:10px 30px;"  runat="server" Text="Register" OnClick="Button1_Click" />
         </td>
     </tr>
     <tr>

@@ -26,9 +26,9 @@ namespace BLL
             return ds;
         }
 
-        public DataSet view()
+        public DataSet view(string cate_id)
         {
-            string s = "select product_id,product_name,image,price from producttab";
+            string s = "select product_id,product_name,image,price from producttab where category_id='"+cate_id+"'";
             DataSet ds = objdal.Fn_Dataset(s);
             return ds;
         }
@@ -52,6 +52,28 @@ namespace BLL
             string s = "delete from producttab where product_id=" + prod_id + "";
             int i = objdal.Fn_Nonquery(s);
             return i;
+        }
+
+        public int prod_price(int prod_id)
+        {
+            string s = "select price from producttab where product_id=" + prod_id + "";
+            int price =Convert.ToInt32(objdal.Fn_Scalar(s));
+            return price;
+            
+        }
+        public int addcart(string cart_id,int price,string uid,int prod_id)
+        {
+
+            string s = "insert into carttab values('" + cart_id + "','" + uid + "'," + prod_id + ",1," + price + ")";
+            int i = objdal.Fn_Nonquery(s);
+            return i;
+        }
+
+        public string count(string uid)
+        {
+            string s = "select count(user_id) from carttab where user_id='" + uid + "'";
+           string cid = objdal.Fn_Scalar(s);
+            return cid;
         }
     }
 }

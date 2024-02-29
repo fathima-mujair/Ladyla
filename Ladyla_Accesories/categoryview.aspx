@@ -10,6 +10,8 @@
             width: 100%;
         }
     </style>
+
+     <link rel="stylesheet" href="userpage.css">
 </head>
 <body>
     <form id="form1" runat="server">
@@ -25,8 +27,8 @@
                             <table class="auto-style1">
                                 <tr>
                                     <td>
-                                        <asp:ImageButton ID="ImageButton1" runat="server" CommandArgument='<%# Eval("category_id") %>' Height="202px" ImageUrl='<%# Eval("image") %>' OnCommand="ImageButton1_Command" Width="184px" />
-                                        1</td>
+                                        <asp:ImageButton ID="ImageButton1" CssClass="box1" runat="server" CommandArgument='<%# Eval("category_id") %>' Height="202px" ImageUrl='<%# Eval("image") %>' OnCommand="ImageButton1_Command" Width="184px" />
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td>

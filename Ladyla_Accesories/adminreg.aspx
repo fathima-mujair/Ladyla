@@ -2,27 +2,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="w-100" style="width: 90%">
        
-        <tr>
-           
+        <tr>    
             <td style="width: 343px">
-                <h1 class="heading">ADMIN REGISTRATION</h1></td>
-            
+                <h1 class="heading">ADMIN REGISTRATION</h1></td> 
         </tr>
         <tr>
             
-            <td style="width: 343px">
+            <td style="width: 343px; height: 29px;">
                 <asp:Label ID="Label1" runat="server" Text="Name" ForeColor="Black"></asp:Label>
             </td>
-            <td>
+            <td style="padding-top:20px; height: 29px;">
                 <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
-            <td style="height: 42px; width: 343px;">
+            <td style="height: 9px; width: 343px;">
                 <asp:Label ID="Label3" runat="server" Text="Address" BackColor="White"></asp:Label>
             </td>
-            <td style="height: 42px">
+            <td style="padding-top:20px; height: 9px;">
                 <asp:TextBox ID="TextBox3" runat="server" TextMode="MultiLine"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
@@ -31,7 +29,7 @@
             <td style="width: 343px">
                 <asp:Label ID="Label8" runat="server" Text="Phone"></asp:Label>
             </td>
-            <td>
+            <td style="height: 42px;padding-top:20px;"">
                 <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox6" ErrorMessage="*Invalid number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
@@ -51,7 +49,7 @@
             <td style="width: 343px">
                 <asp:Label ID="Label10" runat="server" Text="Password"></asp:Label>
             </td>
-            <td>
+            <td style="height: 26px;margin-top:5px;">
                 <asp:TextBox ID="TextBox8" runat="server" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
@@ -60,7 +58,7 @@
             <td style="height: 26px; width: 343px;">
                 <asp:Label ID="Label11" runat="server" Text="Confirm password"></asp:Label>
             </td>
-            <td style="height: 26px">
+            <td style="padding-top:15px">
                 <asp:TextBox ID="TextBox9" runat="server" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox9" ControlToValidate="TextBox8" ErrorMessage="*does not match" ForeColor="Red"></asp:CompareValidator>
@@ -73,7 +71,7 @@
         <tr>
             <td style="width: 343px">&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" CssClass="reg-button" runat="server" Text="Register" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" style="border:none;background-color:black;color:white;padding:10px 30px;" CssClass="reg-button" runat="server" Text="Register" OnClick="Button1_Click" />
             </td>
         </tr>
         <tr>
